@@ -15,12 +15,9 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 480px;
-  border: 2px solid var(--basic-white);
+  border: 2px solid white;
   border-radius: 12px;
   padding: 40px 32px;
-  box-shadow: 0 0 0.2rem var(--basic-white), 0 0 0.2rem var(--basic-white),
-    0 0 2rem var(--basic-color), 0 0 0.8rem var(--basic-color),
-    0 0 2.8rem var(--basic-color), inset 0 0 1.3rem var(--basic-color);
 `;
 
 export const InputBox = styled.div`
@@ -40,7 +37,7 @@ export const Label = styled.label`
   left: 0;
   padding: 10px 0;
   font-size: 20px;
-  color: var(--basic-color);
+  color: green;
   pointer-events: none;
   transition: 0.5s;
 `;
@@ -51,28 +48,23 @@ export const Border = styled.span`
   left: 50%;
   width: 0;
   height: 1px;
-  background-color: var(--basic-white);
-  box-shadow: 0 0 0.2rem var(--basic-white), 0 0 0.2rem var(--basic-white),
-    0 0 2rem var(--basic-color), 0 0 0.8rem var(--basic-color),
-    0 0 2.8rem var(--basic-color), inset 0 0 1.3rem var(--basic-color);
-  transition: 0.4s;
 `;
 
 export const Input = styled(Field)`
   width: 100%;
   padding: 10px 0;
   font-size: 20px;
-  color: var(--basic-color);
+  color: green;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid var(--lighter-color);
+  border-bottom: 1px solid gray;
   outline: none;
   background: transparent;
 
   &:focus ~ ${Label}, &:valid ~ ${Label} {
     top: -20px;
     left: 0;
-    color: var(--lighter-color);
+    color: lightblue;
     font-size: 12px;
   }
 
@@ -97,9 +89,9 @@ export const Button = styled.button`
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  color: var(--basic-color);
+  color: green;
   border: 1px solid var(--basic-color);
-  box-shadow: 0 0 5px var(--basic-color), 0 0 5px var(--basic-color) inset;
+
   z-index: 1;
 
   &:after {
@@ -110,13 +102,13 @@ export const Button = styled.button`
     top: 0;
     right: 0;
     z-index: -1;
-    background: var(--darker-color);
-    box-shadow: 0 0 20px var(--darker-color);
+    background: lightblue;
+
     transition: all 0.3s ease;
   }
 
   &:hover {
-    color: var(--basic-white);
+    color: lightblue;
   }
   &:hover:after {
     left: 0;
@@ -124,14 +116,12 @@ export const Button = styled.button`
   }
   &:active {
     top: 2px;
-    text-shadow: 0 0 10px var(--basic-white);
   }
 `;
 
 export const ErrorMessageStyled = styled(ErrorMessage)`
   width: 80%;
-  color: var(--accent-color);
-  text-shadow: 0 0 10px var(--basic-white);
+  color: red;
   text-align: center;
   margin-bottom: 8px;
   &::first-letter {

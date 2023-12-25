@@ -1,41 +1,39 @@
 import styled from 'styled-components';
 
 export const Title = styled.h2`
-  font-family: 'Megrim';
-  font-weight: normal;
-  font-size: 44px;
-  margin-bottom: 16px;
+  font-family: 'Megrim', cursive;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 20px 0 0;
   text-align: center;
-  text-shadow: 0 0 5px var(--basic-color), 0 0 10px var(--basic-color),
-    0 0 20px var(--basic-color), 0 0 40px var(--basic-color),
-    0 0 80px var(--basic-color);
-  animation: pulsate 1.5s infinite alternate;
+  color: #ffffff; /* Білий колір */
 `;
 
 export const Wrapper = styled.div`
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
 `;
 
 export const AddButton = styled.button`
-  width: 52x;
-  height: 52px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px;
-  background-color: inherit;
-  color: var(--lighter-color);
+  width: 100px;
+  height: 40px;
+  margin-top: 35px;
+  background-color: #ffffff; /* Білий колір */
+  color: #3498db; /* Яскраво-синій колір */
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 0.2rem var(--basic-white), 0 0 1rem var(--basic-color);
+  box-shadow: 0 0 0.2rem #ffffff, 0 0 1rem #3498db;
   transition: all 300ms ease-in-out;
 
   &:hover {
-    background-color: var(--basic-color);
-    color: #000000;
-    box-shadow: 0 0 0.2rem #000000, 0 0 1rem var(--basic-color);
+    background-color: #3498db; /* Яскраво-синій колір */
+    color: #ffffff; /* Білий колір */
+    box-shadow: 0 0 0.2rem #3498db, 0 0 1rem #ffffff;
   }
 `;
 

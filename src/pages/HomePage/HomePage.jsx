@@ -13,10 +13,6 @@ const HomePage = () => {
         <MainTitle>My phonebook</MainTitle>
         <Slogan>Only mine!</Slogan>
       </div>
-
-      <IconItem>
-        <IconShadow></IconShadow>
-      </IconItem>
     </Container>
   );
 };

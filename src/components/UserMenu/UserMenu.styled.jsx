@@ -3,57 +3,55 @@ import styled from 'styled-components';
 export const UserMenuWrap = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px; /* Збільшено відстань між елементами */
 `;
 
 export const Greeting = styled.p`
   font-size: 24px;
-  color: var(--basic-color);
-  text-shadow: 0 0 10px #ffffff;
+  color: var(--primary-color);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); /* Змінено тінь тексту */
 `;
 
 export const Name = styled.span`
   color: var(--accent-color-2);
+  font-weight: bold; /* Збільшено жирність для кращого виділення */
 `;
 
 export const Button = styled.button`
   font-family: inherit;
   color: var(--basic-white);
-  padding: 4px 4px;
-  font-size: 20px;
+  padding: 8px 16px; /* Збільшено відступи */
+  font-size: 18px;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  color: var(--basic-color);
-  border: 1px solid var(--basic-color);
-  box-shadow: 0 0 5px var(--basic-color), 0 0 5px var(--basic-color) inset;
-  z-index: 1;
+  overflow: hidden; /* Додано overflow */
+  border: 2px solid var(--primary-color);
+  border-radius: 8px; /* Збільшено радіус для кращого вигляду */
+  transition: all 0.3s ease;
 
-  &:after {
-    position: absolute;
+  &::before {
     content: '';
-    width: 0;
-    height: 100%;
+    position: absolute;
     top: 0;
-    right: 0;
-    z-index: -1;
-    background: var(--darker-color);
-    box-shadow: 0 0 20px var(--darker-color);
-    transition: all 0.3s ease;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    transition: left 0.3s ease;
   }
 
   &:hover {
     color: var(--basic-white);
+    &::before {
+      left: 0;
+    }
   }
-  &:hover:after {
-    left: 0;
-    width: 100%;
-  }
+
   &:active {
     top: 2px;
-    text-shadow: 0 0 10px var(--basic-white);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); /* Змінено тінь тексту при натисканні */
   }
 `;
