@@ -1,10 +1,4 @@
-import {
-  Container,
-  IconItem,
-  IconShadow,
-  MainTitle,
-  Slogan,
-} from './HomePage.styled';
+import { Container, MainTitle, Slogan } from './HomePage.styled';
 
 const HomePage = () => {
   return (
