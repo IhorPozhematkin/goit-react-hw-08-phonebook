@@ -1,4 +1,4 @@
-import { Container, MainTitle, Slogan } from './HomePage.styled';
+import { Container, MainTitle } from './HomePage.styled';
 
 const HomePage = () => {
   return (
