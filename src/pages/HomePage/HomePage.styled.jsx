@@ -17,7 +17,7 @@ export const MainTitle = styled.h1`
   font-weight: bold;
   font-size: 5rem;
   margin-bottom: 1.5rem;
-  color: #e74c3c; /* Яскраво-червоний колір */
+  color: #e74c3c;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 `;
 

@@ -35,7 +35,7 @@ export const NavLinkStyled = styled(NavLink)`
   }
 
   &.active {
-    color: var(--primary-color); /* Змінив колір для активного стану */
-    font-weight: bold; /* Збільшив жирність для активного стану */
+    color: var(--primary-color);
+    font-weight: bold;
   }
 `;

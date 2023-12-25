@@ -6,7 +6,7 @@ export const Title = styled.h2`
   font-size: 3rem;
   margin: 20px 0 0;
   text-align: center;
-  color: #ffffff; /* Білий колір */
+  color: #ffffff;
 `;
 
 export const Wrapper = styled.div`
@@ -22,8 +22,8 @@ export const AddButton = styled.button`
   width: 100px;
   height: 40px;
   margin-top: 35px;
-  background-color: #ffffff; /* Білий колір */
-  color: #3498db; /* Яскраво-синій колір */
+  background-color: #ffffff;
+  color: #3498db;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -31,8 +31,8 @@ export const AddButton = styled.button`
   transition: all 300ms ease-in-out;
 
   &:hover {
-    background-color: #3498db; /* Яскраво-синій колір */
-    color: #ffffff; /* Білий колір */
+    background-color: #3498db;
+    color: #ffffff;
     box-shadow: 0 0 0.2rem #3498db, 0 0 1rem #ffffff;
   }
 `;

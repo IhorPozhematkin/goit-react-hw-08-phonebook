@@ -10,8 +10,8 @@ export const HeaderStyled = styled.header`
   align-items: center;
   min-height: 60px;
   padding: 16px 24px;
-  background-color: #3498db; /* Синій фон */
-  color: #ffffff; /* Білий колір тексту */
+  background-color: #3498db;
+  color: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
@@ -21,13 +21,13 @@ export const NavigationStyled = styled.nav`
 
   a {
     text-decoration: none;
-    color: #ffffff; /* Білий колір */
+    color: #ffffff;
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #ff6b6b; /* Червоний колір при наведенні */
+      color: #ff6b6b;
     }
   }
 `;
@@ -44,7 +44,7 @@ export const UserMenuStyled = styled.div`
   }
 
   .logoutButton {
-    background-color: #e74c3c; /* Темно-червоний колір */
+    background-color: #e74c3c;
     color: #ffffff;
     border: none;
     padding: 8px 16px;
@@ -53,8 +53,8 @@ export const UserMenuStyled = styled.div`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      background-color: #c0392b; /* Темно-червоний колір при наведенні */
-      transform: scale(1.05); /* Збільшення розміру при наведенні */
+      background-color: #c0392b;
+      transform: scale(1.05);
     }
   }
 `;

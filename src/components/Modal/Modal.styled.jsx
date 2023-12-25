@@ -6,7 +6,7 @@ export const ModalContainer = styled.div`
   align-items: center;
   width: 500px;
   padding: 24px;
-  background-color: #ffffff; /* Змінено на білий колір для видимості контенту */
+  background-color: #ffffff;
   border: 2px solid var(--basic-white);
   border-radius: 12px;
   box-shadow: 0 0 0.2rem var(--basic-white), 0 0 0.2rem var(--basic-white),
@@ -28,12 +28,7 @@ export const Backdrop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Змінено на менш прозорий чорний фон */
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 export const CloseButton = styled.button`
