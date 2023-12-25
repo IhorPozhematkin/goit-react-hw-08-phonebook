@@ -21,13 +21,6 @@ export const MainTitle = styled.h1`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
-export const Slogan = styled.p`
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: #3498db; /* Яскраво-синій колір */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-`;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
