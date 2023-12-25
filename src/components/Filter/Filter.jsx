@@ -1,20 +1,21 @@
-import { ContactsTitle } from 'components/App.styled';
-import { FindInput } from './Filter.styled';
+import { FilterField, Wrapper } from './Filter.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { filterAction } from './../../redux/filter';
-import { selectFilter } from './../../redux/selectors';
+import { updateFilterAction } from '../../redux/contacts/filterSlice';
+import { selectFilter } from '../../redux/contacts/selectors';
+import { Title } from 'pages/ContactsPage/ContactsPage.styled';
 
 export const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectFilter);
 
-  const handleFind = e => {
-    dispatch(filterAction(e.target.value));
+  const handleFilter = e => {
+    dispatch(updateFilterAction(e.target.value));
   };
+
   return (
-    <div>
-      <ContactsTitle>Find contacts by name</ContactsTitle>
-      <FindInput type="text" value={filter} onChange={handleFind} />
-    </div>
+    <Wrapper>
+      <Title>Find contacts by name</Title>
+      <FilterField type="text" value={filter} onChange={handleFilter} />
+    </Wrapper>
   );
 };
